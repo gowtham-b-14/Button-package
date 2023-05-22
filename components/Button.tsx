@@ -99,6 +99,7 @@ const Button = (props: any) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      {/* adding loading icon to mobile will be worked in future */}
       <Text>
         {isWeb
           ? loading &&
@@ -108,7 +109,7 @@ const Button = (props: any) => {
                 style={{ padding: 5 }}
               />
             )
-          : console.log("sorry In mobile you can not add login icon !")}
+          : console.log("sorry In mobile you can not add loading icon !")}
         {icon && iconposition === "left" && icon}
         <Text
           style={
